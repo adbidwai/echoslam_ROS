@@ -11,14 +11,24 @@
    		type="bot_server_node.py" 
    		if="$(eval arg('dummy') == arg('teamsize'))"
    		output="screen"
+<<<<<<< HEAD
     />  
     <node 
+=======
+   /> 
+   <node 
+>>>>>>> upstream/master
       name="plotter_node" 
       pkg="echoslam_ROS" 
       type="plotter_node.py" 
       if="$(eval arg('dummy') == arg('teamsize'))"
       output="screen"
+<<<<<<< HEAD
     />  
+=======
+   />  
+
+>>>>>>> upstream/master
    <group ns="$(eval 'bot' + str(arg('dummy')))">  
       <node
         name="$(eval 'bot' + str(arg('dummy')))"
